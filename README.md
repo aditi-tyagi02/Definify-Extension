@@ -31,6 +31,7 @@ Step 1: Clone the Repository
 
 bash
 git clone https://github.com/aditi-tyagi02/Definify-Extension.git
+
 Step 2: Open Google Chrome
 Launch the Google Chrome browser.
 
@@ -38,8 +39,9 @@ Step 3: Navigate to Chrome Extensions
 Enter the following URL in your browser:
 
 
-text
+
 chrome://extensions/
+
 Step 4: Enable Developer Mode
 Turn on Developer mode using the toggle in the top-right corner.
 
