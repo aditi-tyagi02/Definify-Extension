@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Instant Word Meaning",
+  "version": "0.1.0",
+  "description": "Double-click any English word on a page to see its meaning in a small popup. Only the word you pick is looked up.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.dictionaryapi.dev/*"],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "instant-word-meaning@example.com",
+      "strict_min_version": "121.0"
+    }
+  }
+}
